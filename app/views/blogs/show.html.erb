@@ -4,22 +4,26 @@
     </div>
 <p id="notice"><%= notice %></p>
 
-<h1>ブログ一覧</h1>
+<h1 class="text-center">ブログ一覧</h1>
 
 <hr>
 
+<div class="text-center mx-auto">
 <p>
   <strong>Title:</strong>
+  <p class="form-control mb-3">
   <%= @blog.title %>
 </p>
 
 <p>
   <strong>Content:</strong>
+  <p class="form-control mb-3">
   <%= @blog.content %>
 </p>
 
 <hr>
 
-<%= link_to 'Edit', edit_blog_path(@blog), class: "btn btn-success" %> |
-<%= link_to 'Back', blogs_path, class: "btn btn-secondary" %>
+<%= link_to 'Edit', edit_blog_path(@blog), class: "btn btn-outline-success mx-1" %>
+<%= link_to 'Back', blogs_path, class: "btn btn-outline-secondary" %>
+</div>
 </div>
