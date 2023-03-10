@@ -1,6 +1,14 @@
-<h1>Editing Blog</h1>
+<div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3"></div>
+    </div>
+
+<p id="notice"><%= notice %></p>
+<h1 class="text-center">ブログの編集</h1>
 
 <%= render 'form', blog: @blog %>
-
-<%= link_to 'Show', @blog %> |
-<%= link_to 'Back', blogs_path %>
+<div class="text-center">
+<%= link_to 'Show', @blog, class: "btn btn-outline-info mx-1 mt-2 ml-2" %>
+<%= link_to 'Back', blogs_path, class: "btn btn-outline-secondary mt-2" %>
+</div>
+</div>
